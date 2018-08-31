@@ -1,0 +1,23 @@
+# Find the Largest Number in an Array
+
+### Challenge 
+
+Create a function that takes an array of numbers. Return the largest number in the array.
+
+#### Examples
+
+```
+[4, 5, 1, 3] ➞ 5
+
+[300, 200, 600, 150] ➞ 600
+
+[1000, 1001, 857, 1] ➞ 1001
+```
+
+### Solution
+
+```
+function findLargestNum(arr) {
+	return (Math.max(...arr));
+}
+```
