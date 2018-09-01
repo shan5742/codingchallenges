@@ -1,0 +1,31 @@
+# Filter out Strings from an Array
+
+### Challenge
+
+Create a function that takes an array of positive numbers and strings and returns a new array without the strings. In other words, remove all strings from an array of elements.
+Filter out all strings.
+Return only numbers.
+
+#### Examples
+```
+[1, 2, "a", "b"] ➞ [1, 2]
+
+[1, "a", "b", 0, 15] ➞ [1, 0, 15]
+
+[1, 2, "aasf", "1", "123", 123] ➞ [1, 2, 123]
+```
+
+#### Notes
+
+Zero is a non-negative number.
+
+### Solution
+
+```
+function filterArray(arr) {
+	let newarr = arr.filter(function(n) {
+    return typeof n === "number";
+  });
+  return newarr;
+}
+```
